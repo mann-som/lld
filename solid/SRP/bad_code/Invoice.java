@@ -9,8 +9,18 @@ public class Invoice {
         this.quantity = quantity;
     }
 
-    private int calculateTotal(){
+    public int calculateTotal(){
         int price = (marker.price)* this.quantity;
         return price;
     }
+
+    public void printInvoice(){
+        // printing invoice
+    }
+
+    public void saveToDb(){
+        // saving to db
+    }
 }
+
+// this class is not following SRP
